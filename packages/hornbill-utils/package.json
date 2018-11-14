@@ -1,0 +1,13 @@
+{
+  "name": "hornbill-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "author": "Raymond Yeh <yehjxraymond@gmail.com> (http://geek.sg)",
+  "license": "ISC",
+  "dependencies": {
+    "randexp": "^0.5.3"
+  }
+}

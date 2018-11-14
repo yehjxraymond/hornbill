@@ -1,0 +1,20 @@
+{
+  "name": "hornbill-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Raymond Yeh <yehjxraymond@gmail.com> (http://geek.sg)",
+  "license": "ISC",
+  "dependencies": {
+    "eosjs": "^16.0.9",
+    "hornbill-utils": "^1.0.0",
+    "jest": "^23.6.0",
+    "node-fetch": "^2.3.0",
+    "randexp": "^0.5.3",
+    "text-encoding": "^0.7.0"
+  }
+}
