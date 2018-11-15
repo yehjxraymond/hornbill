@@ -1,6 +1,6 @@
 # Hornbill EOS test suite
 
-Think of hornbill as (truffle)[https://truffleframework.com/truffle] but for EOS. 
+Think of hornbill as [truffle](https://truffleframework.com/truffle) but for EOS. 
 
 ## Hornbill components
 
