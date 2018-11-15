@@ -1,6 +1,14 @@
 const { join } = require("path");
 const { spawn } = require("child_process");
 
+const waitForBlocks = (nodeos) => new Promise((resolve, reject) => {
+  nodeos.stderr.on('data', (data) => {
+    const output = data.toString();
+    if(output.includes('Produced block')){
+      resolve(data);
+    }
+  });
+});
 class NodeosManager {
   async start() {
     if (this.proc) {
@@ -12,6 +20,7 @@ class NodeosManager {
       defaultConfigDir,
       "--delete-all-blocks"
     ]);
+    await waitForBlocks(this.proc);
     return this.proc;
   }
 
