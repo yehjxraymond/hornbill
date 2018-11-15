@@ -1,6 +1,9 @@
-describe('bootstrap', () => {
-  it('wallet and accounts variable is available' , () => {
-    expect(wallet).toBeDefined;
-    expect(accounts).toBeDefined;
-  });
+const {join} = require('path');
+const helloContract = join(__dirname, "../contracts/hello/");
+
+describe.only('deploy works', () => {
+  it('works', async () => {
+    const tx = await wallet.contractMgr.deployContract(helloContract);
+    console.log(tx);
+  })
 });

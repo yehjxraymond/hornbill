@@ -27,3 +27,7 @@ Hornbil utils is a shared library used by other hornbill modules.
 ## Development Pipeline
 - setting up of test environment like how `truffle init` does it
   - using jest with global setup configuation
+
+# Todo
+- compile contract before deploying
+- spin up node before testing for wallet

@@ -13,6 +13,7 @@ class HornbillEnvironment extends NodeEnvironment {
     const wallet = await hornbillWallet.bootstrapWallet();
     this.global.wallet = wallet;
     this.global.accounts = wallet.accountMgr.accounts;
+    this.global.deploy = wallet.contractMgr.deployContract;
   }
 
   async teardown() {

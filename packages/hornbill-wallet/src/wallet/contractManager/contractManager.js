@@ -5,12 +5,14 @@ class ContractManager {
     this.wallet = wallet;
   }
 
-  async deployContract({
-    account,
+  async deployContract(
     contractDir,
-  }) {
+    account
+  ) {
     await this.wallet.unlock();
-    await execAsync(`cleos set contract ${account} ${contractDir}`);
+    const deployAccount = account || this.wallet.accountMgr.accounts[0] || "eosio";
+    await execAsync(`cleos set contract ${deployAccount} ${contractDir}`);
+    return deployAccount;
   }
 }
 
