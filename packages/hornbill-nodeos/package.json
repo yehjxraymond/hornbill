@@ -1,6 +1,6 @@
 {
   "name": "hornbill-nodeos",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -9,8 +9,6 @@
   },
   "author": "Raymond Yeh <yehjxraymond@gmail.com> (http://geek.sg)",
   "license": "ISC",
-  "dependencies": {
-  },
   "devDependencies": {
     "jest": "^23.6.0"
   }
