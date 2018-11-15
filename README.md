@@ -1,4 +1,4 @@
- d# Hornbill EOS test suite
+# Hornbill EOS test suite
 
 Think of hornbill as (truffle)[https://truffleframework.com/truffle] but for EOS. 
 
