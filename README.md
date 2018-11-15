@@ -12,6 +12,7 @@ Hornbill wallet allows developer to bootstrap a set of 10 test accounts for deve
 - nodeos
 - keosd
 - cleos
+- eosio-cpp (from eosio-cdt)
 
 ### hornbill-nodeos
 
@@ -29,5 +30,10 @@ Hornbil utils is a shared library used by other hornbill modules.
   - using jest with global setup configuation
 
 # Todo
-- compile contract before deploying
-- spin up node before testing for wallet
+- smart contract artifactor
+  - abi to object
+  - executable functions and default values
+- deterministic wallet account name generation/wallet file migration
+
+# Bug/Improvement
+- setup and teardown for hornbill-box-default is ran per test file, need to change that for the entire contract OR add an await for proc.killed

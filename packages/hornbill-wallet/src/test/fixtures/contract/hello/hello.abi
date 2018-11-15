@@ -1,26 +1,9 @@
 {
-    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Nov 14 11:09:55 2018",
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Nov 15 21:56:53 2018",
     "version": "eosio::abi/1.1",
-    "structs": [
-        {
-            "name": "hi",
-            "base": "",
-            "fields": [
-                {
-                    "name": "user",
-                    "type": "name"
-                }
-            ]
-        }
-    ],
+    "structs": [],
     "types": [],
-    "actions": [
-        {
-            "name": "hi",
-            "type": "hi",
-            "ricardian_contract": ""
-        }
-    ],
+    "actions": [],
     "tables": [],
     "ricardian_clauses": [],
     "variants": [],
