@@ -10,7 +10,7 @@
   "author": "Raymond Yeh <yehjxraymond@gmail.com> (http://geek.sg)",
   "license": "ISC",
   "dependencies": {
-    "eosjs": "^16.0.9",
+    "eosjs": "^20.0.0-beta2",
     "hornbill-nodeos": "^1.0.0",
     "hornbill-wallet": "^1.0.0",
     "jest": "^23.6.0",
