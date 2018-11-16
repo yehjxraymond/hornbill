@@ -4,7 +4,8 @@ const helloContract = join(__dirname, "../contracts/hello/");
 describe("hello", () => {
   let code;
   beforeAll(async () => {
-    code = await wallet.contractMgr.deployContract(helloContract);
+    jest.setTimeout(10000);
+    code = await wallet.contractMgr.deployContract(helloContract, "hello");
   });
 
   describe("hi", () => {

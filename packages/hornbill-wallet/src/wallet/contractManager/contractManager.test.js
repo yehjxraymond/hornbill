@@ -17,7 +17,7 @@ describe("ContractManager", () => {
 
   describe("deployContract", () => {
     it("deploys code from directory", async () => {
-      const contractDir = join(__dirname, "../../test/fixtures/contract");
+      const contractDir = join(__dirname, "../../test/fixtures/contract/hello");
       await contractMgr.deployContract( contractDir, 'hello', account );
     });
   });

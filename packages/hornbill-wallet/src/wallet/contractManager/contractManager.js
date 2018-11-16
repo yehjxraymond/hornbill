@@ -7,9 +7,7 @@ class ContractManager {
   }
 
   async compileContract(dir, name) {
-    const cppFile = join(dir, name , `${name}.cpp`);
-    const wasmFile = join(dir, name, `${name}.wasm`);
-    await execAsync(`eosio-cpp -abigen ${cppFile} -o ${wasmFile}`);
+    await execAsync(`cd ${dir} && eosio-cpp -abigen ${name}.cpp -o ${name}.wasm`);
   }
 
   async deployContract(
@@ -20,7 +18,7 @@ class ContractManager {
     await this.compileContract(contractDir, contractName);
     await this.wallet.unlock();
     const deployAccount = account || this.wallet.accountMgr.accounts[0] || "eosio";
-    await execAsync(`cleos set contract ${deployAccount} ${join(contractDir, contractName)}`);
+    await execAsync(`cleos set contract ${deployAccount} ${contractDir}`);
     return deployAccount;
   }
 }
