@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose false --maxWorkers=1",
     "test:watch": "jest --watchAll --verbose false"
   },
   "author": "Raymond Yeh <yehjxraymond@gmail.com> (http://geek.sg)",
@@ -17,6 +17,7 @@
     "jest-environment-node": "^23.4.0",
     "node-fetch": "^2.3.0",
     "randexp": "^0.5.3",
-    "text-encoding": "^0.7.0"
+    "text-encoding": "^0.7.0",
+    "winston": "^3.1.0"
   }
 }
