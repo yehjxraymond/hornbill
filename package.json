@@ -6,6 +6,6 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "test": "lerna run test"
+    "test": "lerna run test --concurrency 1"
   }
 }
